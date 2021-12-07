@@ -3,39 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="./img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <Li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </Li>
-            <Li class="site-list__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </Li>
-            <Li class="site-list__item">
-              <a href="#">
-                Конкурс
-              </a>
-            </Li>
-            <Li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </Li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="./img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <Li class="site-list__item site-list__item--active">
+                <a class="site-list__link">
+                  Главная
+                </a>
+              </Li>
+              <Li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">
+                  Фотографии
+                </a>
+              </Li>
+              <Li class="site-list__item">
+                <a class="site-list__link" href="#">
+                  Конкурс
+                </a>
+              </Li>
+              <Li class="site-list__item">
+                <a class="site-list__link" href="#">
+                  HTML Academy
+                </a>
+              </Li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-catalog">
       <div class="main-catalog__title-wrapper">
@@ -63,7 +66,7 @@
           <div class="photo__list">
             <blockquote class="photo__item">
               <img class="photo__car-photo" src="img/main-catalog/photo-car-mobile.jpg" width="280" height="180" alt="Фото машины">
-              <div>
+              <div class="photo__author-info">
                 <cite class="photo__author-name">Левон
                   <span class="photo__time">(5 часов назад)</span>
                 </cite>
@@ -73,7 +76,7 @@
             </blockquote>
             <blockquote class="photo__item">
               <img class="photo__drumset-photo" src="img/main-catalog/photo-drumset-mobile.jpg" width="280" height="180" alt="Фото барабанов">
-              <div>
+              <div class="photo__author-info">
                 <cite class="photo__author-name">Антон
                   <span class="photo__time">(12 часов назад)</span>
                 </cite>
@@ -83,7 +86,7 @@
             </blockquote>
             <blockquote class="photo__item">
               <img class="photo__window-photo" src="img/main-catalog/photo-window-mobile.jpg" width="280" height="180" alt="Фото окна">
-              <div>
+              <div class="photo__author-info">
                 <cite class="photo__author-name">Борис
                   <span class="photo__time">(20 часов назад)</span>
                 </cite>
@@ -93,7 +96,7 @@
             </blockquote>
             <blockquote class="photo__item">
               <img class="photo__fair-photo" src="img/main-catalog/photo-fair-mobile.jpg" width="280" height="180" alt="Фото машины">
-              <div>
+              <div class="photo__author-info">
                 <cite class="photo__author-name">Сергей
                   <span class="photo__time">(25 часов назад)</span>
                 </cite>
@@ -103,7 +106,7 @@
             </blockquote>
             <blockquote class="photo__item">
               <img class="photo__vertex-photo" src="img/main-catalog/photo-vertex-mobile.jpg" width="280" height="180" alt="Фото с вершины">
-              <div>
+              <div class="photo__author-info">
                 <cite class="photo__author-name">Максим
                   <span class="photo__time">(40 часов назад)</span>
                 </cite>
@@ -113,7 +116,7 @@
             </blockquote>
             <blockquote class="photo__item">
               <img class="photo__wing-photo" src="img/main-catalog/photo-wing-mobile.jpg" width="280" height="180" alt="Фото крыла самолета">
-              <div>
+              <div class="photo__author-info">
                 <cite class="photo__author-name">Надежда
                   <span class="photo__time">(45 часов назад)</span>
                 </cite>
@@ -195,3 +198,4 @@
       </div>
     </footer>
   </body>
+</html>
