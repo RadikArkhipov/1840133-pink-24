@@ -1,18 +1,36 @@
 .page-header {
-  position: relative;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .page-header__wrapper {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 280px;
+  padding: 19px 20px;
+  margin: 0 auto;
   display: flex;
 }
 
-.page-header__logo {
-  width: 280px;
-  padding-top: 22px;
-  padding-right: 20px;
-  padding-bottom: 21px;
-  padding-left: 20px;
-  margin: 0 auto;
+.page-header--nav-open {
+  background-color: #283645;
+
+  .main-nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

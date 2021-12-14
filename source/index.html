@@ -2,14 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="./img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
+        <a class="page-header__link">
+          <img class="page-header__logo-pink" src="./img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,39 +47,32 @@
         <div class="intro__wrapper">
           <header class="intro__header">
             <h2 class="visually-hidden">Вступление</h2>
-            <p class="intro__slogan">
-              Взгляните на жизнь иначе!
-            </p>
-            <div class="intro__images-container">
-              <img src="img/page-main/ipnone in hand.png" width="" height="" alt="Айфон в руке">
-            </div>
+            <p class="intro__slogan">Взгляните на жизнь иначе!</p>
           </header>
-        </div>
-      </section>
-      <section class="download">
-        <div class="download__wrapper">
-          <h2 class="visually-hidden">Доступные платформы для приложения</h2>
-          <a class="download__button" href="https://www.apple.com/ru/store">Скачать приложение</a>
-          <ul class="download__platform-list">
-            <li class="download__item">
-              <a class="download__link" href="https://www.apple.com/ru/store">
-                <img src="img/page-main/apple-logo.svg" width="47" height="56" alt="Логотип «apple»">
-              </a>
-            </li>
-            <li class="download__item">
-              <a class="download__link" href="https://play.google.com/store">
-                <img src="img/page-main/android-logo .svg" width="43" height="47" alt="Логотип «android»">
-              </a>
-            </li>
-            <li class="download__item">
-              <a class="download__link" href="https://www.microsoft.com/ru-ru">
-                <img src="img/page-main/microsoft-logo.svg" width="44" height="41" alt="Логотип «microsoft»">
-              </a>
-            </li>
-          </ul>
-          <p class="download__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          <div class="intro__download">
+            <h2 class="visually-hidden">Доступные платформы для приложения</h2>
+            <a class="intro__download-button" href="https://www.apple.com/ru/store">Скачать приложение</a>
+            <ul class="intro__download-platform-list">
+              <li class="intro__download-item">
+                <a class="intro__download-link" href="https://www.apple.com/ru/store">
+                  <img src="img/page-main/apple-logo.svg" width="47" height="56" alt="Логотип «apple»">
+                </a>
+              </li>
+              <li class="intro__download-item">
+                <a class="intro__download-link" href="https://play.google.com/store">
+                  <img src="img/page-main/android-logo .svg" width="43" height="47" alt="Логотип «android»">
+                </a>
+              </li>
+              <li class="intro__download-item">
+                <a class="intro__download-link" href="https://www.microsoft.com/ru-ru">
+                  <img src="img/page-main/microsoft-logo.svg" width="44" height="41" alt="Логотип «microsoft»">
+                </a>
+              </li>
+            </ul>
+            <p class="intro__download-text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
       <section class="information">
@@ -90,28 +84,50 @@
           <p class="information__slogan">
             Нам есть, что вам предложить!
           </p>
-          <ul class="information__list">
-            <li class="information__item">
-              <h3 class="information__title">Поднимает настроение</h3>
-              <p class="information__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__title">Меняет мир вокруг</h3>
-              <p class="information__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="information__item">
-              <h3 class="information__title">Заводит новых друзей</h3>
-              <p class="information__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
-          <div class="information__images-container">
-            <img src="img/page-main/iphone.png" width="157" height="320" alt="Изображение Айфона">
+          <div class="information__container-list-images">
+            <ul class="information__list">
+              <li class="information__item">
+                <h3 class="information__title">Поднимает настроение</h3>
+                <p class="information__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="information__item">
+                <h3 class="information__title">Меняет мир вокруг</h3>
+                <p class="information__description">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="information__item">
+                <h3 class="information__title">Заводит новых друзей</h3>
+                <p class="information__description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+            <ul class="information__images-list">
+              <li class="information__images-item">
+                <img src="img/page-main/iphone-screen-desktop-1.png" width="186" height="382" alt="Айфон с изображением первого скрина">
+              </li>
+              <li class="information__images-item">
+                <img src="img/page-main/iphone-screen-desktop-2.png" width="186" height="382" alt="Айфон с изображением второго скрина">
+              </li>
+              <li class="information__images-item information__images-item--main-screen">
+                <img src="img/page-main/iphone-screen-desktop-3.png" width="186" height="382" alt="Айфон с изображением третьего скрина">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="round-diagram">
+        <div class="round-diagram__wrapper">
+          <h2 class="visually-hidden">Положительный эффект от пользования приложением</h2>
+          <div class="round-diagram__container">
+            <p class="round-diagram__slogan">Эффект на 24 часа!</p>
+            <p class="round-diagram__text">Британские ученые провели исследования
+              и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="round-diagram__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -121,13 +137,14 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
+                <cite class="reviews__author-age-work">25 лет, водитель трамвая</cite>
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </div>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+        <!--<blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__text">
@@ -142,7 +159,7 @@
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </div>
-            </blockquote>
+            </blockquote>   -->
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
@@ -156,33 +173,35 @@
       <section class="price">
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
-          <table class="price__table" border="1">
-            <caption class="visually-hidden">Таблица тарифов</caption>
-            <tr class="price__table-line">
-              <th class="price__table-cell">невидимая ячейка</th>
-              <th>База 1,99 USD</th>
-              <th>Стандарт 3,99 USD</th>
-              <th>Анлим 9,99 USD</th>
-            </tr>
-            <tr>
-              <td class="price__table-text" >Розовый фильтр</td>
-              <td>галка</td>
-              <td>галка</td>
-              <td>галка</td>
-            </tr>
-            <tr>
-              <td class="price__table-text">Смайлики</td>
-              <td>крест</td>
-              <td>галка</td>
-              <td>галка</td>
-            </tr>
-            <tr>
-              <td class="price__table-text">Комментарии</td>
-              <td>крест</td>
-              <td>крест</td>
-              <td>галка</td>
-            </tr>
-          </table>
+          <div class="price__container-table">
+            <table class="price__table table" border="1">
+              <caption class="visually-hidden">Таблица тарифов</caption>
+              <tr class="price__table-line">
+                <th class="table__cell">невидимая ячейка</th>
+                <th>База 1,99 USD</th>
+                <th>Стандарт 3,99 USD</th>
+                <th>Анлим 9,99 USD</th>
+              </tr>
+              <tr>
+                <td class="price__table-text table__cell">Розовый фильтр</td>
+                <td class="price__table-text">Розовый фильтр</td>
+                <td class="price__table-text">Розовый фильтр</td>
+                <td class="price__table-text">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="price__table-text table__cell">Смайлики</td>
+                <td class="price__table-text">Смайлики</td>
+                <td class="price__table-text">Смайлики</td>
+                <td class="price__table-text">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="price__table-text table__cell">Комментарии</td>
+                <td class="price__table-text">Комментарии</td>
+                <td class="price__table-text">Комментарии</td>
+                <td class="price__table-text">Комментарии</td>
+              </tr>
+            </table>
+          </div>
           <div class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button--current">2</button>
@@ -196,17 +215,19 @@
           <p class="contacts__slogan">
             Остались вопросы? Cвяжитесь с нами!
           </p>
-          <div class="contacts__phone phone">
-            <h3 class="contacts__title phone__title">Звоните:</h3>
-            <a class="contacts__text phone__link" href="tel:78125556666">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__email email">
-            <h3 class="contacts__title email__title">Пишите:</h3>
-            <a class="contacts__text email__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__address address">
-            <h3 class="contacts__title address__title">Приезжайте в гости:</h3>
-            <p class="contacts__text address__text">ул. Большая Конюшенная, 19/8</p>
+          <div class="contacts__container">
+            <div class="contacts__phone phone">
+              <h3 class="contacts__title phone__title">Звоните:</h3>
+              <a class="contacts__text phone__link" href="tel:78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__email email">
+              <h3 class="contacts__title email__title">Пишите:</h3>
+              <a class="contacts__text email__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__address address">
+              <h3 class="contacts__title address__title">Приезжайте в гости:</h3>
+              <p class="contacts__text address__text">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
           <div class="contacts__map">
 

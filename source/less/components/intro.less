@@ -1,9 +1,97 @@
 .intro {
-  background-image: url("../../img/page-main/back-mobile.jpg");
-  background-repeat: no-repeat;
+  background: url("../../img/page-main/ipnone-hand-mobile.png") no-repeat, url("../../img/page-main/back-mobile.jpg") no-repeat;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  background-color: #1d2631;
+  width: 320px;
+  height: 106px;
+  bottom: 0;
+}
+
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .intro__slogan {
   margin: 0;
   padding-top: 92px;
+}
+
+.intro__download-button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: inherit;
+  width: 280px;
+}
+
+.intro__download-platform-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.intro__download-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    background-image: url("../../img/page-main/back-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .intro__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .intro__header {
+    display: flex;
+  }
+
+  .intro__slogan {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .intro__download {
+    background-color: unset;
+  }
+
+  .intro__download-button {
+    width: 300px;
+  }
+
+  .intro__download-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    background-image: url("../../img/page-main/back-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .intro__wrapper {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .intro__slogan {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
