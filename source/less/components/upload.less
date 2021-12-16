@@ -1,11 +1,65 @@
-.upload__editor-photo-container {
-  background-color: @grey;
-}
-
 .upload__title {
   margin: 0;
   color: #283645;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  width: 280px;
+  padding: 0 20px;
+}
+
+.upload__wrapper {
+  background-color: @grey;
+  width: 280px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.upload__tools-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .upload__title {
+    font-size: 18px;
+    width: 620px;
+  }
+
+  .upload__wrapper {
+    width: 620px;
+    padding: 10px 20px;
+  }
+
+  .upload__editor-photo {
+    display: flex;
+  }
+
+  .upload__tools-list {
+    display: block;
+  }
+
+  .upload__button-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload__title {
+    width: 940px;
+    padding: 0 130px;
+  }
+
+  .upload__wrapper {
+    width: 940px;
+    padding: 10px 20px;
+  }
+
+  .upload__button-container {
+    display: block;
+  }
 }

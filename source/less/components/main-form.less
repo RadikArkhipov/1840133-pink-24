@@ -3,12 +3,13 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  background-image: url("../../img/page-main/back-mobile.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-form__title-wrapper {
-  background-image: url("../../img/page-main/back-mobile.jpg");
-  background-repeat: no-repeat;
-  width: 320px;
+  margin: 0 auto;
+  width: 280px;
   padding-top: 105px;
 }
 
@@ -19,4 +20,45 @@
   font-size: 24px;
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-form {
+    background-image: url("../../img/page-main/back-inner-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-form__title-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .main-form__title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form {
+    background-image: url("../../img/page-main/back-inner-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-form__title-wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form {
+    background-image: url("../../img/page-main/back-inner-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-form__title-wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

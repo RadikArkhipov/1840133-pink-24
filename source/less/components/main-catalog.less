@@ -1,6 +1,12 @@
-.main-catalog__title-wrapper {
+.main-catalog {
   background-image: url("../../img/page-main/back-mobile.jpg");
   background-repeat: no-repeat;
+}
+
+.main-catalog__title-wrapper {
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 105px;
 }
 
 .main-catalog__title {
@@ -8,4 +14,33 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog {
+    background-image: url("../../img/page-main/back-inner-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-catalog__title-wrapper {
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  .main-catalog__title {
+    margin: 0;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog {
+    background-image: url("../../img/page-main/back-inner-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-catalog__title-wrapper {
+    width: 940px;
+  }
 }
