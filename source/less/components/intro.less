@@ -1,5 +1,11 @@
 .intro {
   background: url("../../img/page-main/ipnone-hand-mobile.png") no-repeat, url("../../img/page-main/back-mobile.jpg") no-repeat;
+  background-position: 0 176px, 0 0;
+  margin-bottom: 46px;
+}
+
+.intro__header {
+  margin-bottom: 310px;
 }
 
 .intro::after {
@@ -7,8 +13,9 @@
   position: absolute;
   background-color: #1d2631;
   width: 320px;
-  height: 106px;
-  bottom: 0;
+  height: 271px;
+  bottom: -163px;
+  z-index: -1;
 }
 
 .intro__wrapper {
@@ -19,7 +26,13 @@
 
 .intro__slogan {
   margin: 0;
+  text-align: center;
   padding-top: 92px;
+}
+
+.intro__download {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__download-button {
@@ -29,6 +42,13 @@
   text-decoration: none;
   color: inherit;
   width: 280px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 3px;
+  border-radius: 30px;
+  padding: 21px 38px;
 }
 
 .intro__download-platform-list {
@@ -36,18 +56,24 @@
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .intro__download-text {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  margin-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
   .intro {
     background-image: url("../../img/page-main/back-tablet.jpg");
     background-repeat: no-repeat;
+    margin-bottom: 58px;
   }
 
   .intro__wrapper {
@@ -58,23 +84,39 @@
 
   .intro__header {
     display: flex;
+    width: 247px;
+    padding-left: 30px;
+    margin-bottom: 39px;
+  }
+
+  .intro::after {
+    display: none;
   }
 
   .intro__slogan {
     font-size: 40px;
     line-height: 48px;
+    padding-top: 200px;
   }
 
   .intro__download {
     background-color: unset;
+    width: 300px;
   }
 
   .intro__download-button {
     width: 300px;
+    margin: 0;
+    margin-bottom: 51px;
+  }
+
+  .intro__download-platform-list {
+    margin-bottom: 51px;
   }
 
   .intro__download-text {
     font-size: 18px;
+    margin-bottom: 119px;
   }
 }
 

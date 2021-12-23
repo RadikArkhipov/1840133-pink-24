@@ -8,29 +8,126 @@
 
 .page-header__wrapper {
   width: 280px;
-  padding: 19px 20px;
+  padding: 20px 20px;
   margin: 0 auto;
   display: flex;
 }
 
 .page-header--nav-open {
   background-color: #283645;
+  border-bottom: 1px solid #000000;
 
   .main-nav__wrapper {
     display: flex;
+  }
+
+  .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 23px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .main-nav__toggle:hover::before {
+    background-color: #d22856;
+    box-shadow: none;
+  }
+
+  .main-nav__toggle:active::before {
+    background-color: fade(#d22856, 30%);
+    box-shadow: none;
+  }
+
+  .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    width: 23px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+
+  .main-nav__toggle:hover::after {
+    background-color: #d22856;
+    box-shadow: none;
+  }
+
+  .main-nav__toggle:active::after {
+    background-color: fade(#d22856, 30%);
+    box-shadow: none;
+  }
+}
+
+@media (max-width: @mobile-tablet-width-only) {
+  .page-header--nav-nojs {
+    background-color: #283645;
+    border-bottom: 1px solid #000000;
+
+    .main-nav__wrapper {
+      display: flex;
+    }
+
+    .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: -5px;
+      width: 23px;
+      height: 2px;
+      background-color: #ffffff;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    .main-nav__toggle:hover::before {
+      background-color: #d22856;
+      box-shadow: none;
+    }
+
+    .main-nav__toggle:active::before {
+      background-color: fade(#d22856, 30%);
+      box-shadow: none;
+    }
+
+    .main-nav__toggle::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: -5px;
+      width: 23px;
+      height: 2px;
+      background-color: #ffffff;
+      transform: rotate(-45deg);
+    }
+
+    .main-nav__toggle:hover::after {
+      background-color: #d22856;
+      box-shadow: none;
+    }
+
+    .main-nav__toggle:active::after {
+      background-color: fade(#d22856, 30%);
+      box-shadow: none;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     width: 620px;
-    margin: 0 auto;
+    padding: 40px 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
     width: 940px;
-    margin: 0 auto;
   }
 }
