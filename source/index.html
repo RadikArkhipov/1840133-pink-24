@@ -137,8 +137,8 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
-                <cite class="reviews__author-age-work">25 лет, водитель трамвая</cite>
-                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="reviews__author-age-work">25 лет, водитель трамвая</span>
+                <span class="reviews__author-name">Николай Петров</span>
                 <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
@@ -176,45 +176,38 @@
           </div>
         </div>
       </section>
-      <section class="price">
-        <div class="price__wrapper slider">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <div class="table__container">
-            <table class="table">
-              <caption class="visually-hidden">Таблица тарифов</caption>
-              <tr class="table__line table__line--line">
-                <th class="table__cell table__cell--tariff table__cell--cell">невидимая ячейка</th>
-                <th class="table__cell table__cell--tariff">База
-                  <span class="table__price">1,99 USD</span>
-                </th>
-                <th class="table__cell table__cell--tariff">Стандарт
-                  <span class="table__price">3,99 USD</span>
-                </th>
-                <th class="table__cell table__cell--tariff">Анлим
-                  <span class="table__price">9,99 USD</span>
-                </th>
+      <section class="tariff">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariff__wrapper slider">
+          <table class="tariff__table">
+            <tbody>
+              <tr>
+                <td class="tariff__name--empty"></td>
+                <td class="tariff__name">База<br><span class="tariff__price">1,99 USD</span></td>
+                <td class="tariff__name tariff__hit">Стандарт<br><span class="tariff__price">3,99 USD</span></td>
+                <td class="tariff__name">Анлим<br><span class="tariff__price">9,99 USD</span></td>
               </tr>
-              <tr class="table__line">
-                <td class="table__cell table__cell--cell">Розовый фильтр</td>
-                <td class="table__cell">Розовый фильтр</td>
-                <td class="table__cell">Розовый фильтр</td>
-                <td class="table__cell">Розовый фильтр</td>
+              <tr>
+                <td class="tariff__option-name">Розовый фильтр</td>
+                <td class="tariff__option-yes">Розовый фильтр</td>
+                <td class="tariff__option-yes">Розовый фильтр</td>
+                <td class="tariff__option-yes">Розовый фильтр</td>
               </tr>
-              <tr class="table__line">
-                <td class="table__cell table__cell--cell">Смайлики</td>
-                <td class="table__cell">Смайлики</td>
-                <td class="table__cell">Смайлики</td>
-                <td class="table__cell">Смайлики</td>
+              <tr>
+                <td class="tariff__option-name">Смайлики</td>
+                <td class="tariff__option-no">Смайлики</td>
+                <td class="tariff__option-yes">Смайлики</td>
+                <td class="tariff__option-yes">Смайлики</td>
               </tr>
-              <tr class="table__line">
-                <td class="table__cell table__cell--cell">Комментарии</td>
-                <td class="table__cell">Комментарии</td>
-                <td class="table__cell">Комментарии</td>
-                <td class="table__cell">Комментарии</td>
+              <tr>
+                <td class="tariff__option-name">Комментарии</td>
+                <td class="tariff__option-no">Комментарии</td>
+                <td class="tariff__option-no">Комментарии</td>
+                <td class="tariff__option-yes">Комментарии</td>
               </tr>
-            </table>
-          </div>
-          <div class="price__toggles slider-toggles">
+            </tbody>
+          </table>
+          <div class="tariff__toggles slider-toggles">
             <button class="slider__toggles" type="button">
               <span class="visually-hidden">1 тариф</span>
             </button>
@@ -247,9 +240,10 @@
               <p class="contacts__text address__text">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
-          <div class="contacts__map">
-
-          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.390689838076!2d30.321342864985226!3d59.9394426290786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640511930547!5m2!1sru!2sru" width="320" height="200" allowfullscreen title="Офис компании «PINK» по адресу Большая Конюшенная ул. 19/8, Санкт-Петербург">
+          </iframe>
         </div>
       </section>
     </main>

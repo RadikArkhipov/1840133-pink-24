@@ -65,11 +65,20 @@
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     width: 940px;
-    margin-top: 40px;
+    margin-top: unset;
+    display: unset;
+    background-color: unset;
+    position: unset;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__list {
-    width: 940px;
+    width: 633px;
     display: flex;
+    position: unset;
+    justify-content: space-between;
   }
 }
