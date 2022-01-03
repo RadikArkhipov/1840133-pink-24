@@ -1,21 +1,30 @@
 .intro {
-  background: url("../../img/page-main/ipnone-hand-mobile.png") no-repeat, url("../../img/page-main/back-mobile.jpg") no-repeat;
-  background-position: 0 176px, 0 0;
-  margin-bottom: 70px;
+  background-image: url("../img/page-main/iphone-hand-mobile.png"), url("../img/page-main/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 176px, center top;
+  background-size: auto, cover;
+  position: relative;
+  margin-bottom: 46px;
+}
+
+@media (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../img/page-main/iphone-hand-mobile@2x.png"), url("../img/page-main/back-mobile@2x.jpg");
+    background-size: 320px, cover;
+  }
 }
 
 .intro__header {
-  margin-bottom: 310px;
+  margin-bottom: 338px;
 }
 
 .intro::after {
   content: "";
   position: absolute;
   background-color: #1d2631;
-  width: 320px;
+  width: 100%;
   height: 271px;
-  bottom: -163px;
-  z-index: -1;
+  bottom: 0;
 }
 
 .intro__wrapper {
@@ -33,6 +42,9 @@
 .intro__download {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 38px;
 }
 
 .intro__download-button {
@@ -45,7 +57,6 @@
   height: 55px;
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 30px;
   box-sizing: border-box;
   box-shadow: 0 0 0 3px;
   border-radius: 30px;
@@ -71,9 +82,16 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    background: url("../../img/page-main/iphone-hand-tablet.png") no-repeat, url("../../img/page-main/back-tablet.jpg") no-repeat;
-    background-position: 0 184px, 0 0;
-    margin-bottom: unset;
+    background-image: url("../img/page-main/iphone-hand-tablet.png"), url("../img/page-main/back-tablet.jpg");
+    background-position: right 184px, center top;
+    margin-bottom: 58px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../img/page-main/iphone-hand-tablet@2x.png"), url("../img/page-main/back-tablet@2x.jpg");
+      background-size: 660px, cover;
+    }
   }
 
   .intro__wrapper {
@@ -102,6 +120,7 @@
   .intro__download {
     background-color: unset;
     width: 300px;
+    padding-bottom: 75px;
   }
 
   .intro__download-button {
@@ -121,9 +140,16 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    background: url("../../img/page-main/iphone-hand-desktop.png") no-repeat, url("../../img/page-main/back-desktop.jpg") no-repeat;
-    background-position: 140px 208px, 0 0;
+    background-image: url("../img/page-main/iphone-hand-desktop.png"), url("../img/page-main/back-desktop.jpg");
+    background-position: 85px bottom, center;
     margin-bottom: 77px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../img/page-main/iphone-hand-desktop@2x.png"), url("../img/page-main/back-desktop@2x.jpg");
+      background-size: 1050px, cover;
+    }
   }
 
   .intro__wrapper {

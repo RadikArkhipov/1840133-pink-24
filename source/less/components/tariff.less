@@ -1,21 +1,21 @@
 .tariff {
-  background-image: url("../img/page-main/grey-background-price.png");
+  background-image: url("../img/page-main/grey-background.svg");
   background-repeat: no-repeat;
-  background-position-y: -25px;
-  padding: 95px 0 49px;
+  background-position: top center;
+  padding: 125px 0 49px;
   margin-bottom: 47px;
 }
 
 .tariff__wrapper {
-  width: 320px;
   overflow: hidden;
 }
 
 .tariff__table {
   border-collapse: collapse;
-  width: 300%;
-  display: block;
-  margin-left: -254px;
+  width: 840px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   margin-bottom: 45px;
 }
 
@@ -90,6 +90,34 @@
   justify-content: center;
 }
 
+.tariff__hit {
+  position: relative;
+}
+
+.tariff__hit::before {
+  content: "ХИТ";
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  width: 27px;
+  height: 10px;
+  z-index: 1;
+  transform: rotate(-45deg);
+  top: 17px;
+  left: 6px;
+}
+
+.tariff__hit::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/page-main/hit-mobile.svg");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: -2px;
+}
+
 @media (min-width: @tablet-width) {
   .tariff__wrapper {
     width: auto;
@@ -98,7 +126,6 @@
 
   .tariff__table {
     width: 620px;
-    margin: 0 auto;
   }
 
   .tariff__table tr {
@@ -119,7 +146,7 @@
   }
 
   .tariff__name {
-    padding: 7px 9px;
+    padding: 13px 36px 5px;
   }
 
   .tariff__option-yes {
@@ -134,6 +161,18 @@
 
   .tariff__option-name {
     display: table-cell;
+  }
+
+  .tariff__hit::before {
+    top: 11px;
+    left: 3px;
+  }
+
+  .tariff__hit::after {
+    background-image: url("../img/page-main/hit-tablet.svg");
+    width: 61px;
+    height: 61px;
+    left: 0;
   }
 }
 
@@ -156,5 +195,20 @@
 
   .tariff__name {
     padding: 16px 66px 17px;
+  }
+
+  .tariff__toggles {
+    display: none;
+  }
+
+  .tariff__hit::before {
+    top: 17px;
+    left: 6px;
+  }
+
+  .tariff__hit::after {
+    background-image: url("../img/page-main/hit-mobile.svg");
+    width: 74px;
+    height: 74px;
   }
 }

@@ -10,7 +10,10 @@
     <header class="page-header page-header--nav-nojs">
       <div class="page-header__wrapper">
         <a class="page-header__link">
-          <img class="page-header__logo-pink" src="./img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
+          <picture>
+            <source media="(min-width: @tablet-width)" srcset="./img/logotype-tablet.svg">
+            <img class="page-header__logo-pink" src="./img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
