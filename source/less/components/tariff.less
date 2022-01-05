@@ -1,0 +1,214 @@
+.tariff {
+  background-image: url("../img/page-main/grey-background.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 125px 0 49px;
+  margin-bottom: 47px;
+}
+
+.tariff__wrapper {
+  overflow: hidden;
+}
+
+.tariff__table {
+  border-collapse: collapse;
+  width: 840px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 45px;
+}
+
+.tariff__table tr {
+  color: #283645;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.tariff__table tr:not(:first-child) td {
+  border: 2px solid #e5e5e5;
+  padding: 13px 122px 14px 21px;
+  background-color: #ffffff;
+  font-weight: 400;
+}
+
+.tariff__name--empty {
+  display: none;
+}
+
+.tariff__name {
+  background-color: #283645;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 18px 33px 15px;
+  text-align: center;
+}
+
+.tariff__name:nth-child(2) {
+  border-right: 2px solid #f2f2f2;
+}
+
+.tariff__name:nth-child(3) {
+  border-right: 2px solid #f2f2f2;
+}
+
+.tariff__name:nth-child(4) {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 2px 0 #283645;
+}
+
+.tariff__price {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.tariff__option-name {
+  display: none;
+}
+
+.tariff__option-yes {
+  background-image: url("../img/page-main/icon-yes-green.svg");
+  background-repeat: no-repeat;
+  background-position-x: 225px;
+  background-position-y: 15px;
+}
+
+.tariff__option-no {
+  background-image: url("../img/page-main/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position-x: 225px;
+  background-position-y: 15px;
+}
+
+.tariff__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.tariff__hit {
+  position: relative;
+}
+
+.tariff__hit::before {
+  content: "ХИТ";
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  width: 27px;
+  height: 10px;
+  z-index: 1;
+  transform: rotate(-45deg);
+  top: 17px;
+  left: 6px;
+}
+
+.tariff__hit::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/page-main/hit-mobile.svg");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: -2px;
+}
+
+@media (min-width: @tablet-width) {
+  .tariff__wrapper {
+    width: auto;
+    overflow: visible;
+  }
+
+  .tariff__table {
+    width: 620px;
+  }
+
+  .tariff__table tr {
+    text-transform: none;
+  }
+
+  .tariff__table tr:not(:first-child) td {
+    padding: 6px 19px 7px 18px;
+  }
+
+  .tariff__table td {
+    width: 25%;
+  }
+
+  .tariff__name--empty {
+    display: table-cell;
+    background-color: #f2f2f2;
+  }
+
+  .tariff__name {
+    padding: 13px 36px 5px;
+  }
+
+  .tariff__option-yes {
+    background-position: center;
+    font-size: 0;
+  }
+
+  .tariff__option-no {
+    background-position: center;
+    font-size: 0;
+  }
+
+  .tariff__option-name {
+    display: table-cell;
+  }
+
+  .tariff__hit::before {
+    top: 11px;
+    left: 3px;
+  }
+
+  .tariff__hit::after {
+    background-image: url("../img/page-main/hit-tablet.svg");
+    width: 61px;
+    height: 61px;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff__table {
+    width: 940px;
+  }
+
+  .tariff__table tr {
+    font-size: 18px;
+  }
+
+  .tariff__price {
+    font-size: 24px;
+  }
+
+  .tariff__table tr:not(:first-child) td {
+    padding: 14px 19px 13px 17px;
+  }
+
+  .tariff__name {
+    padding: 16px 66px 17px;
+  }
+
+  .tariff__toggles {
+    display: none;
+  }
+
+  .tariff__hit::before {
+    top: 17px;
+    left: 6px;
+  }
+
+  .tariff__hit::after {
+    background-image: url("../img/page-main/hit-mobile.svg");
+    width: 74px;
+    height: 74px;
+  }
+}
