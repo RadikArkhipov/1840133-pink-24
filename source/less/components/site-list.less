@@ -3,7 +3,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-
 .site-list__link {
   font-weight: 700;
   font-size: 18px;
@@ -29,6 +28,20 @@
   .site-list__item {
     border-bottom: unset;
     border-top: unset;
+  }
+
+  .site-list__item--active {
+    position: relative;
+  }
+
+  .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background-color: @base-bg-color;
+    bottom: 30px;
   }
 
   .site-list__link {

@@ -1,0 +1,48 @@
+.users-photos {
+  background-color: @base-bg-color;
+  color: #283645;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 49px;
+}
+
+.users-photos__title {
+  font-weight: 400;
+  font-size: 14px;
+  width: 245px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.users-photos__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photos__title {
+    font-size: 18px;
+    width: 445px;
+    padding-bottom: 85px;
+  }
+
+  .users-photos__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photos {
+    margin-bottom: 67px;
+  }
+
+  .users-photos__title {
+    width: 572px;
+  }
+
+  .users-photos__wrapper {
+    width: 940px;
+  }
+}
