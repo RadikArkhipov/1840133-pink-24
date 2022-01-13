@@ -1,44 +1,152 @@
+.upload {
+  background-color: @grey;
+}
+
+.upload__title-wrapper {
+  margin: 0 auto;
+  background-color: @base-bg-color;
+  text-align: center;
+  padding-bottom: 52px;
+}
+
 .upload__title {
+  color: #283645;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.upload__subtitle {
   margin: 0;
   color: #283645;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  width: 280px;
-  padding: 0 20px;
 }
 
 .upload__wrapper {
-  background-color: @grey;
   width: 280px;
-  padding: 10px 20px;
+  padding: 20px 0 41px;
   margin: 0 auto;
 }
 
+.upload__photo-container {
+  margin-bottom: 43px;
+}
+
 .upload__tools-list {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 0 110px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  width: 200px;
+  justify-content: space-between;
 }
+
+.upload__crop-control {
+  position: absolute;
+  width: 240px;
+  left: 40px;
+  height: 2px;
+  background-color: #283645;
+  margin-top: 35px;
+}
+
+.upload__fill-control {
+  display: none;
+}
+
+.upload__contrast-control {
+  display: none;
+}
+
+.upload__control-toggle {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.upload__control-toggle--crop {
+  top: -6px;
+  right: 35px;
+}
+
+.upload__button-post {
+  box-shadow: inset 0 0 0 3px #d22856;
+  color: #d22856;
+  margin-bottom: 12px;
+}
+
+.upload__button-post:hover {
+  color: @base-bg-color;
+  background-color: #d22856;
+}
+
+.upload__button-post:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d22856;
+}
+
+.upload__button-cancel {
+  box-shadow: inset 0 0 0 3px rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+}
+
+.upload__button-cancel:hover {
+  box-shadow: inset 0 0 0 3px rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.upload__button-cancel:active {
+  background-color: rgba(40, 54, 69, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: unset;
+}
+
 
 @media (min-width: @tablet-width) {
   .upload__title {
     font-size: 18px;
-    width: 620px;
+  }
+
+  .upload__subtitle {
+    font-size: 18px;
   }
 
   .upload__wrapper {
     width: 620px;
-    padding: 10px 20px;
+    padding: 57px 0 54px;
   }
 
   .upload__editor-photo {
     display: flex;
   }
 
-  .upload__tools-list {
+  .upload__photo-container {
+    margin-bottom: unset;
+    margin-right: 45px;
+  }
+
+  .upload__road-photo {
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload__tools-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+  }
+
+  .upload__fill-control {
+    display: block;
+  }
+
+  .upload__contrast-control {
     display: block;
   }
 
@@ -49,14 +157,18 @@
 }
 
 @media (min-width: @desktop-width) {
-  .upload__title {
+  .upload {
     width: 940px;
-    padding: 0 130px;
+    margin: 0 auto;
   }
 
   .upload__wrapper {
     width: 940px;
-    padding: 10px 20px;
+    padding: 0;
+  }
+
+  .upload__editor-photo {
+    padding: 57px 60px 57px 80px;
   }
 
   .upload__button-container {

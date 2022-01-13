@@ -1,46 +1,67 @@
 .main-catalog {
-  background-image: url("../../img/page-main/back-mobile.jpg");
-  background-repeat: no-repeat;
+  min-width: 320px;
+  background-color: @base-bg-color;
 }
 
 .main-catalog__title-wrapper {
-  margin: 0 auto;
-  width: 280px;
-  padding-top: 105px;
+  background-image: url("../img/page-main/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 54px;
+}
+
+@media (min-resolution: 2dppx) {
+  .main-catalog__title-wrapper {
+    background-image: url("../img/page-main/back-mobile@2x.jpg");
+  }
 }
 
 .main-catalog__title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 84px;
+  width: 172px;
 }
 
 @media (min-width: @tablet-width) {
-  .main-catalog {
-    background-image: url("../../img/page-main/back-inner-tablet.jpg");
-    background-repeat: no-repeat;
+  .main-catalog__title-wrapper {
+    background-image: url("../img/page-main/back-inner-tablet.jpg");
+    margin-bottom: 100px;
   }
 
-  .main-catalog__title-wrapper {
-    margin: 0 auto;
-    width: 620px;
+  @media (min-resolution: 2dppx) {
+    .main-catalog__title-wrapper {
+      background-image: url("../img/page-main/back-inner-tablet@2x.jpg");
+    }
   }
 
   .main-catalog__title {
-    margin: 0;
     font-size: 50px;
     line-height: 68px;
+    width: 358px;
+    padding-top: 191px;
+    padding-bottom: 143px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-catalog {
-    background-image: url("../../img/page-main/back-inner-desktop.jpg");
-    background-repeat: no-repeat;
+  .main-catalog__title-wrapper {
+    background-image: url("../img/page-main/back-inner-desktop.jpg");
   }
 
-  .main-catalog__title-wrapper {
-    width: 940px;
+  @media (min-resolution: 2dppx) {
+    .main-catalog__title-wrapper {
+      background-image: url("../img/page-main/back-inner-desktop@2x.jpg");
+    }
+  }
+
+  .main-catalog__title {
+    padding-top: 184px;
+    padding-bottom: 104px;
   }
 }

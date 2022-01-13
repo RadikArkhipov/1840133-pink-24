@@ -1,0 +1,120 @@
+.best-photo {
+  width: 320px;
+  position: relative;
+  margin: 0 auto 20px;
+}
+
+.best-photo__feature {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #d22856;
+  padding: 6px 20px;
+  text-transform: uppercase;
+}
+
+.best-photo__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.best-photo__group {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.best-photo__description {
+  background-color: @grey;
+  padding: 17px 10px 20px 18px;
+}
+
+.best-photo__author {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.best-photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.best-photo__text {
+  margin: 0;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.best-photo__likes {
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.best-photo__likes-icon {
+  background-image: url("../img/main-catalog/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 13px;
+  height: 12px;
+  border: 0;
+  margin-right: 18px;
+  background-color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .best-photo {
+    width: 660px;
+    margin-bottom: 50px;
+  }
+
+  .best-photo__group {
+    width: 620px;
+  }
+
+  .best-photo__description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .best-photo__author {
+    margin-right: 325px;
+  }
+
+  .best-photo__text {
+    order: 1;
+  }
+
+  .best-photo__text br {
+    display: none;
+  }
+
+  .best-photo__likes {
+    flex-direction: row-reverse;
+  }
+
+  .best-photo__likes-icon {
+    margin-right: unset;
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .best-photo {
+    width: 1200px;
+  }
+
+  .best-photo__group {
+    width: 940px;
+  }
+}
