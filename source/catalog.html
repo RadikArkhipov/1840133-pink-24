@@ -26,7 +26,7 @@
                 </a>
               </Li>
               <Li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="#">
+                <a class="site-list__link">
                   Фотографии
                 </a>
               </Li>
@@ -55,7 +55,11 @@
         </h2>
         <div class="users-photos__best best-photo">
           <span class="best-photo__feature">Панорама дня</span>
-          <img class="best-photo__image" src="img/main-catalog/panorama-mobile.jpg" width="320" height="137" alt="Фото пользователя">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-catalog/panorama-desktop.jpg 1x, img/main-catalog/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/main-catalog/panorama-tablet.jpg 1x, img/main-catalog/panorama-tablet@2x.jpg 2x">
+            <img class="best-photo__image" src="img/main-catalog/panorama-mobile.jpg" srcset="img/main-catalog/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото пользователя">
+          </picture>
           <blockquote class="best-photo__group">
             <div class="best-photo__description">
               <cite class="best-photo__author">Анна
@@ -75,7 +79,11 @@
           <div class="users-photos__list post-list">
             <blockquote class="post-list__item">
               <a href="#">
-                <img class="post-list__image" src="img/main-catalog/photo-car-mobile.jpg" width="280" height="180" alt="Фото машины">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-car-desktop.jpg 1x, img/main-catalog/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-car-tablet.jpg 1x, img/main-catalog/photo-car-tablet@2x.jpg 2x">
+                  <img class="post-list__image" src="img/main-catalog/photo-car-mobile.jpg" srcset="img/main-catalog/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото машины">
+                </picture>
               </a>
               <div class="post-list__author-info">
                 <cite class="post-list__author">Левон
@@ -89,7 +97,13 @@
               </div>
             </blockquote>
             <blockquote class="post-list__item">
-              <img class="post-list__image" src="img/main-catalog/photo-drumset-mobile.jpg" width="280" height="180" alt="Фото барабанов">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-drumset-desktop.jpg 1x, img/main-catalog/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-drumset-tablet.jpg 1x, img/main-catalog/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="post-list__image" src="img/main-catalog/photo-drumset-mobile.jpg" srcset="img/main-catalog/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото барабанов">
+                </picture>
+              </a>
               <div class="post-list__author-info">
                 <cite class="post-list__author">Антон
                   <span class="post-list__time">(12 часов назад)</span>
@@ -102,7 +116,13 @@
               </div>
             </blockquote>
             <blockquote class="post-list__item">
-              <img class="post-list__image" src="img/main-catalog/photo-window-mobile.jpg" width="280" height="180" alt="Фото окна">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-window-desktop.jpg 1x, img/main-catalog/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-window-tablet.jpg 1x, img/main-catalog/photo-window-tablet@2x.jpg 2x">
+                  <img class="post-list__image" src="img/main-catalog/photo-window-mobile.jpg" srcset="img/main-catalog/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото окна">
+                </picture>
+              </a>
               <div class="post-list__author-info">
                 <cite class="post-list__author">Борис
                   <span class="post-list__time">(20 часов назад)</span>
@@ -115,7 +135,13 @@
               </div>
             </blockquote>
             <blockquote class="post-list__item">
-              <img class="post-list__image" src="img/main-catalog/photo-fair-mobile.jpg" width="280" height="180" alt="Фото машины">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-fair-desktop.jpg 1x, img/main-catalog/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-fair-tablet.jpg 1x, img/main-catalog/photo-fair-tablet@2x.jpg 2x">
+                  <img class="post-list__image" src="img/main-catalog/photo-fair-mobile.jpg" srcset="img/main-catalog/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото ярмарки">
+                </picture>
+              </a>
               <div class="post-list__author-info">
                 <cite class="post-list__author">Сергей
                   <span class="post-list__time">(25 часов назад)</span>
@@ -128,7 +154,13 @@
               </div>
             </blockquote>
             <blockquote class="post-list__item">
-              <img class="post-list__image" src="img/main-catalog/photo-vertex-mobile.jpg" width="280" height="180" alt="Фото с вершины">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-vertex-desktop.jpg 1x, img/main-catalog/photo-vertex-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-vertex-tablet.jpg 1x, img/main-catalog/photo-vertex-tablet@2x.jpg 2x">
+                  <img class="post-list__image" src="img/main-catalog/photo-vertex-mobile.jpg" srcset="img/main-catalog/photo-vertex-mobile@2x.jpg 2x" width="280" height="180" alt="Фото с вершины">
+                </picture>
+              </a>
               <div class="post-list__author-info">
                 <cite class="post-list__author">Максим
                   <span class="post-list__time">(40 часов назад)</span>
@@ -141,7 +173,13 @@
               </div>
             </blockquote>
             <blockquote class="post-list__item">
-              <img class="post-list__image" src="img/main-catalog/photo-wing-mobile.jpg" width="280" height="180" alt="Фото крыла самолета">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-wing-desktop.jpg 1x, img/main-catalog/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-wing-tablet.jpg 1x, img/main-catalog/photo-wing-tablet@2x.jpg 2x">
+                  <img class="post-list__image" src="img/main-catalog/photo-wing-mobile.jpg" srcset="img/main-catalog/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фото крыла самолета">
+                </picture>
+              </a>
               <div class="post-list__author-info">
                 <cite class="post-list__author">Надежда
                   <span class="post-list__time">(45 часов назад)</span>
@@ -165,20 +203,26 @@
 
           <div class="upload__editor-photo">
               <div class="upload__photo-container">
-                <img class="upload__road-photo" src="img/main-catalog/photo-road-mobile.jpg" width="280" height="374" alt="Фото дороги">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-catalog/photo-road-desktop.jpg 1x, img/main-catalog/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/main-catalog/photo-road-tablet.jpg 1x, img/main-catalog/photo-road-tablet@2x.jpg 2x">
+                  <img class="upload__road-photo" src="img/main-catalog/photo-road-mobile.jpg" srcset="img/main-catalog/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Фото дороги">
+                </picture>
               </div>
               <div class="upload__tools-wrapper">
                 <ul class="upload__tools-list">
                   <li class="upload__crop-item">
                     <span class="visually-hidden">Обрезка</span>
-                    <svg class="upload__crop-image" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/></svg>
+                    <svg class="upload__crop-image" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
+                    </svg>
                     <div class="upload__crop-control">
                       <button class="upload__control-toggle upload__control-toggle--crop"></button>
                     </div>
                   </li>
                   <li class="upload__fill-item">
                     <span class="visually-hidden">Наполнение</span>
-                    <svg class="upload__fill-image" width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
+                    <svg class="upload__fill-image" width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g>
+                    </svg>
                     <div class="upload__fill-control">
                       <button class="upload__control-toggle upload__control-toggle--fill"></button>
                     </div>

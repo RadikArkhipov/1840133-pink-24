@@ -13,6 +13,12 @@
   background-size: cover;
 }
 
+@media (min-resolution: 2dppx) {
+  .main-form__title-wrapper {
+    background-image: url("../img/page-main/back-mobile@2x.jpg");
+  }
+}
+
 .main-form__title {
   color: @base-bg-color;
   line-height: 33px;
@@ -30,6 +36,12 @@
     background-image: url("../img/page-main/back-inner-tablet.jpg");
   }
 
+  @media (min-resolution: 2dppx) {
+    .main-form__title-wrapper {
+      background-image: url("../img/page-main/back-inner-tablet@2x.jpg");
+    }
+  }
+
   .main-form__title {
     font-size: 50px;
     line-height: 68px;
@@ -42,6 +54,12 @@
 @media (min-width: @desktop-width) {
   .main-form__title-wrapper {
     background-image: url("../img/page-main/back-inner-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-form__title-wrapper {
+      background-image: url("../img/page-main/back-inner-desktop@2x.jpg");
+    }
   }
 
   .main-form__title {
