@@ -1,0 +1,147 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+    background-color: @base-bg-color;
+    margin-bottom: 116px;
+  }
+
+  .research__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .research__image {
+    position: relative;
+    margin-left: 20px;
+    z-index: 1;
+  }
+
+  .research__image::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/page-main/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 238px;
+    height: 276px;
+    z-index: -1;
+    top: -54px;
+    left: -16px;
+  }
+
+  .research__pic {
+    position: relative;
+    display: block;
+    width: 174px;
+    height: 174px;
+    text-align: center;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: 700;
+    color: #d22856;
+    border: 16px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .research__description {
+    width: 310px;
+  }
+
+  .research__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin: -19px 0 10px;
+  }
+
+  .research__text {
+    margin: 0 0 10px;
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 300px;
+  }
+
+  .research__link {
+    color: #d22856;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration-skip-ink: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: @grey;
+    padding-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  .research__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+
+  .research__image {
+    width: 298px;
+    height: 345px;
+    margin-right: 49px;
+  }
+
+  .research__image::after {
+    top: -68px;
+    left: -21px;
+    width: 298px;
+    height: 345px;
+  }
+
+  .research__pic {
+    width: 220px;
+    height: 220px;
+    font-size: 120px;
+    line-height: 187px;
+    border: 18px solid #d22856;
+  }
+
+  .research__description {
+    width: 530px;
+  }
+
+  .research__title {
+    line-height: 30px;
+    margin-top: 26px;
+    margin-bottom: 25px;
+  }
+
+  .research__title br {
+    display: none;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    margin-bottom: 31px;
+    width: auto;
+  }
+
+  .research__text br {
+    display: none;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
