@@ -1,0 +1,47 @@
+.logo-header {
+  fill: #ffffff;
+}
+
+.logo-header:hover {
+  fill: #d22856;
+}
+
+.logo-header--visible-phone:active {
+  opacity: 0.3;
+}
+
+.logo-header--visible-tablet {
+  display: none;
+}
+
+.logo-header--visible-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-header--visible-phone {
+    display: none;
+  }
+
+  .logo-header--visible-tablet {
+    display: block;
+  }
+
+  .logo-header--visible-tablet:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-header--visible-tablet {
+    display: none;
+  }
+
+  .logo-header--visible-desktop {
+    display: block;
+  }
+
+  .logo-header--visible-desktop:active {
+    opacity: 0.3;
+  }
+}

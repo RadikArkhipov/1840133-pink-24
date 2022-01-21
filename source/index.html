@@ -14,11 +14,15 @@
     <header class="page-header page-header--nav-nojs">
       <div class="page-header__wrapper">
         <a class="page-header__link">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
-            <img class="page-header__logo-pink" src="img/logotype-mobile.svg" width="74" height="23" alt="Приложение «PINK»">
-          </picture>
+          <svg class="logo-header logo-header--visible-phone" width="74" height="23">
+            <use href="img/sprite.svg#logo-pink-phone"></use>
+          </svg>
+          <svg class="logo-header logo-header--visible-tablet" width="145" height="40">
+            <use href="img/sprite.svg#logo-pink-tablet"></use>
+          </svg>
+          <svg class="logo-header logo-header--visible-desktop" width="147" height="40">
+            <use href="img/sprite.svg#logo-pink-desktop"></use>
+          </svg>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -63,17 +67,26 @@
             <ul class="intro__download-platform-list">
               <li class="intro__download-item">
                 <a class="intro__download-link" href="https://www.apple.com/ru/store">
-                  <img src="img/page-main/apple-logo.svg" width="47" height="56" alt="Логотип «apple»">
+                  <svg class="intro__logo-apple" width="47" height="56">
+                    <use href= "img/sprite.svg#logo-apple"></use>
+                  </svg>
+           <!-- <img src="img/page-main/apple-logo.svg" width="47" height="56" alt="Логотип «apple»">-->
                 </a>
               </li>
               <li class="intro__download-item">
                 <a class="intro__download-link" href="https://play.google.com/store">
-                  <img src="img/page-main/android-logo .svg" width="43" height="47" alt="Логотип «android»">
+                  <svg class="intro__logo-android" width="43" height="47"">
+                    <use href="img/sprite.svg#logo-android"></use>
+                  </svg>
+            <!--  <img src="img/page-main/android-logo .svg" width="43" height="47" alt="Логотип «android»"> -->
                 </a>
               </li>
               <li class="intro__download-item">
                 <a class="intro__download-link" href="https://www.microsoft.com/ru-ru">
-                  <img src="img/page-main/microsoft-logo.svg" width="44" height="41" alt="Логотип «microsoft»">
+                  <svg class="intro__logo-microsoft" width="44" height="41">
+                    <use href="img/sprite.svg#logo-microsoft"></use>
+                  </svg>
+          <!--  <img src="img/page-main/microsoft-logo.svg" width="44" height="41" alt="Логотип «microsoft»"> -->
                 </a>
               </li>
             </ul>
@@ -247,38 +260,45 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/page-footer/footer-logo-desktop.svg">
-            <img class="page-footer__logo-pink" src="img/page-footer/footer-logo.svg" width="145" height="40" alt="Логотип «PINK»">
-          </picture>
+        <a class="page-footer__link">
+          <svg class="logo-footer logo-footer--visible-phone-tablet" width="145" height="40">
+            <use href="img/sprite.svg#logo-pink-footer"></use>
+          </svg>
+          <svg class="logo-footer logo-footer--visible-desktop" width="147" height="40">
+            <use href="img/sprite.svg#logo-pink-footer-desktop"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-                <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".1" cx="27" cy="27" r="25.5" fill="#fff" stroke="#283645" stroke-width="3"/><path d="M29.56 20.17a3.67 3.67 0 0 1 2.11-.03c.69.2 1.3.59 1.72 1.12.72-.2 1.42-.44 2.14-.65-.01.32-.1.63-.26.91a2.2 2.2 0 0 1-.65.73A1.8 1.8 0 0 0 36 21.8c-.1.41-.3.8-.59 1.13-.29.33-.65.6-1.07.77-.25 6.27-3.37 10.47-10.69 10.3h-.5c-.44 0-4.42-.43-5.15-1.76a7.28 7.28 0 0 0 4.98-1.09c-1.03-.29-2.85-.45-3.16-2.74.4.13.81.16 1.22.09-1.28-.8-2.7-1.46-2.62-3.5.4.3.9.46 1.42.43-.74-.23-2.09-3.12-.94-4.6 1.92 1.72 3.96 3.34 7.59 3.5.22-2.12 1.2-3.55 3.07-4.16Z" fill="#D22856"/></svg>
-                <span class="visually-hidden">Мы в Твиттере</span>
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере
+                <svg width="18" height="14">
+                  <use href="img/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".1" cx="27" cy="27" r="25.5" fill="#fff" stroke="#283645" stroke-width="3"/><path d="M29.5 21.2H32V18h-2.98c-3.26.17-4.42 2.27-3.94 5.82H23v3.33h2.08V36h3.94v-8.85h2.96v-3.33H29c-.02-1-.04-2.3.5-2.63Z" fill="#D22856"/></svg>
-                <span class="visually-hidden">Мы в Фейсбуке</span>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
+                <svg width="9" height="18">
+                  <use href="img/sprite.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity=".1" cx="27" cy="27" r="25.5" fill="#fff" stroke="#283645" stroke-width="3"/><path d="M23.83 33.8a1.25 1.25 0 0 1-1.28.04 1.1 1.1 0 0 1-.44-.46.97.97 0 0 1-.1-.6V22.22c-.03-.2 0-.41.1-.6.1-.2.24-.35.44-.46a1.26 1.26 0 0 1 1.28.03l12.4 5.5c1.03.45 1.03 1.17 0 1.62l-12.4 5.5Z" fill="#D22856"/></svg>
-                <span class="visually-hidden">Мы на Ютубе</span>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">Мы на Ютубе
+                <svg width="15" height="13">
+                  <use href="img/sprite.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg aria-hidden="true" focusable="false" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/></svg>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg class="copyright__logo-htmlacademy" width="27" height="34">
+              <use href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

@@ -42,6 +42,7 @@
   display: flex;
   width: 200px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .upload__crop-control {
@@ -53,8 +54,32 @@
   margin-top: 35px;
 }
 
+.upload__fill-image {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 .upload__fill-control {
   display: none;
+}
+
+.upload__contrast {
+  position: relative;
+}
+
+.upload__contrast::after {
+  content: "";
+  position: absolute;
+  top: 115px;
+  right: -60px;
+  width: 320px;
+  height: 1px;
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
+.upload__contrast-image {
+  fill: #283645;
+  opacity: 0.3;
 }
 
 .upload__contrast-control {
@@ -122,6 +147,16 @@
     padding: 57px 0 54px;
   }
 
+  .upload__tools-list {
+    flex-direction: column;
+    width: 289px;
+    padding: 9px 0 0;
+  }
+
+  .upload__tools-list li {
+    margin-bottom: 51px;
+  }
+
   .upload__editor-photo {
     display: flex;
   }
@@ -129,12 +164,6 @@
   .upload__photo-container {
     margin-bottom: unset;
     margin-right: 45px;
-  }
-
-  .upload__contrast-image {
-    width: 22px;
-    height: 22px;
-    fill: #d22856;
   }
 
   .upload__road-photo {
@@ -148,17 +177,121 @@
     width: 275px;
   }
 
+  .upload__crop {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+  }
+
+  .upload__crop-image {
+    width: 22px;
+    height: 22px;
+  }
+
+  .upload__crop-control {
+    width: 202px;
+    position: relative;
+    margin-top: 0;
+    left: 0;
+  }
+
+  .upload__crop-control::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    width: 275px;
+    height: 1px;
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  .upload__fill {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+  }
+
+  .upload__fill-image {
+    width: 24px;
+    height: 22px;
+    fill: #d22856;
+    opacity: 1;
+  }
+
+  .upload__contrast {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 255px;
+  }
+
+  .upload__contrast::after {
+    top: 43px;
+    width: 275px;
+    right: -15px;
+  }
+
+  .upload__contrast-image {
+    width: 16px;
+    height: 16px;
+    fill: #d22856;
+    opacity: 1;
+  }
+
   .upload__fill-control {
     display: block;
+    width: 202px;
+    height: 2px;
+    background-color: #283645;
+    position: relative;
+  }
+
+  .upload__fill-control::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    right: -15px;
+    width: 275px;
+    height: 1px;
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  .upload__control-toggle--fill {
+    left: 20px;
+    top: -6px;
   }
 
   .upload__contrast-control {
     display: block;
+    width: 202px;
+    height: 2px;
+    background-color: #283645;
+    position: relative;
+  }
+
+  .upload__control-toogle--contrast {
+    top: -6px;
+    right: 85px;
   }
 
   .upload__button-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .upload__button-post {
+    width: 260px;
+    margin: 43px auto 24px;
+  }
+
+  .upload__button-cancel {
+    width: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -177,7 +310,74 @@
     padding: 57px 60px 57px 80px;
   }
 
-  .upload__button-container {
-    display: block;
+  .upload__tools-wrapper {
+    width: 410px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .upload__tools-list {
+    width: 382px;
+    padding: 0;
+    margin-bottom: 130px;
+  }
+
+  .upload__tools-list li {
+    width: 382px;
+    margin-bottom: 29px;
+  }
+
+  .upload__crop-image {
+    width: 44px;
+    height: 44px;
+  }
+
+  .upload__crop-control {
+    width: 288px;
+  }
+
+  .upload__crop-control::after {
+    width: 410px;
+    right: -28px;
+    top: 40px;
+  }
+
+  .upload__fill-image {
+    width: 48px;
+    height: 43px;
+  }
+
+  .upload__fill-control {
+    width: 288px;
+  }
+
+  .upload__fill-control::after {
+    width: 410px;
+    right: -28px;
+    top: 40px;
+  }
+
+  .upload__contrast-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .upload__contrast-control {
+    width: 288px;
+  }
+
+  .upload__contrast::after {
+    display: none;
+  }
+
+  .upload__button-post {
+    width: 183px;
+    height: 55px;
+    margin: 0 44px 0 0;
+  }
+
+  .upload__button-cancel {
+    width: 183px;
+    height: 55px;
   }
 }
