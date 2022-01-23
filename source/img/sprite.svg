@@ -21,7 +21,7 @@
       <symbol viewBox="0 0 44 41" id="logo-microsoft"><path d="M21 19.5H0V0h21v19.5Z" fill="#F05423"/><path d="M44 19.5H23V0h21v19.5Z" fill="#84C441"/><path d="M21 41H0V21.5h21V41Z" fill="#2DABE2"/><path d="M44 41H23V21.5h21V41Z" fill="#F9BC15"/>
       </symbol>
 
-      <symbol viewBox="0 0 44 44" id="icon-crop"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
+      <symbol viewBox="0 0 44 44" id="icon-crop"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"/>
       </symbol>
 
       <symbol viewBox="0 0 48 43" id="icon-fill">
