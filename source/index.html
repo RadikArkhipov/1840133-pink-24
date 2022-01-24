@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"><!--32x32-->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png"><!--180x180-->
@@ -15,7 +15,7 @@
       <div class="page-header__wrapper">
         <a class="page-header__link">
           <svg class="logo-header logo-header--visible-phone" width="74" height="23">
-            <use href="img/sprite.svg#logo-pink-phone"></use>
+            <use href="img/sprite.svg#logo-pink-mobile"></use>
           </svg>
           <svg class="logo-header logo-header--visible-tablet" width="145" height="40">
             <use href="img/sprite.svg#logo-pink-tablet"></use>
@@ -70,7 +70,6 @@
                   <svg class="intro__logo-apple" width="47" height="56">
                     <use href= "img/sprite.svg#logo-apple"></use>
                   </svg>
-           <!-- <img src="img/page-main/apple-logo.svg" width="47" height="56" alt="Логотип «apple»">-->
                 </a>
               </li>
               <li class="intro__download-item">
@@ -78,7 +77,6 @@
                   <svg class="intro__logo-android" width="43" height="47"">
                     <use href="img/sprite.svg#logo-android"></use>
                   </svg>
-            <!--  <img src="img/page-main/android-logo .svg" width="43" height="47" alt="Логотип «android»"> -->
                 </a>
               </li>
               <li class="intro__download-item">
@@ -86,7 +84,6 @@
                   <svg class="intro__logo-microsoft" width="44" height="41">
                     <use href="img/sprite.svg#logo-microsoft"></use>
                   </svg>
-          <!--  <img src="img/page-main/microsoft-logo.svg" width="44" height="41" alt="Логотип «microsoft»"> -->
                 </a>
               </li>
             </ul>
@@ -124,16 +121,21 @@
             <ul class="information__list picture-list">
               <li class="picture-list__item">
                 <picture>
+                  <source type="image/webp" srcset="img/page-main/iphone-screen-1-desktop.webp, img/page-main/iphone-screen-1-desktop@2x.webp 2x">
                   <img class="picture-list__image" src="img/page-main/iphone-screen-1-desktop.png" srcset="img/page-main/iphone-screen-1-desktop@2x.png 2x" width="186" height="382" alt="Фото iphone">
                 </picture>
               </li>
               <li class="picture-list__item">
                 <picture>
+                  <source type="image/webp" srcset="img/page-main/iphone-screen-2-desktop.webp, img/page-main/iphone-screen-2-desktop@2x.webp 2x">
                   <img class="picture-list__image" src="img/page-main/iphone-screen-2-desktop.png" srcset="img/page-main/iphone-screen-2-desktop@2x.png 2x" width="186" height="382" alt="Фото iphone">
                 </picture>
               </li>
               <li class="picture-list__item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/page-main/iphone-screen-3-desktop.webp, img/page-main/iphone-screen-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/page-main/iphone-screen-3-tablet.webp, img/page-main/iphone-screen-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/page-main/iphone-screen-mobile.webp, img/page-main/iphone-screen-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/page-main/iphone-screen-3-desktop.png 1x, img/page-main/iphone-screen-3-desktop@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/page-main/iphone-screen-3-tablet.png 1x, img/page-main/iphone-screen-3-tablet@2x.png 2x">
                   <img class="picture-list__image" src="img/page-main/iphone-screen-mobile.png" srcset="img/page-main/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Фото iphone">
@@ -313,4 +315,3 @@
     </script>
   </body>
 </html>
-

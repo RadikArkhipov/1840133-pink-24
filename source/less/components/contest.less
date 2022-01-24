@@ -39,6 +39,14 @@
   min-height: 61px;
 }
 
+.contest__text:hover {
+  border-color: #283645;
+}
+
+.contest__text:focus {
+  border-color: #d22856;
+}
+
 input::placeholder {
   color: #283645;
 }
@@ -92,6 +100,14 @@ input::placeholder {
   height: 34px;
   border: 2px solid #e5e5e5;
   background-color: @base-bg-color;
+}
+
+.contest__checkbox label:hover::before {
+  border-color: #283645;
+}
+
+.contest__checkbox label:active::before {
+  border-color: #d22856;
 }
 
 .contest__checkbox-icon:checked + label::before {
@@ -195,6 +211,14 @@ input::placeholder {
   display: block;
 }
 
+.contest__radio label:hover::before {
+  border-color: #283645;
+}
+
+.contest__radio label:active::before {
+  border-color: #d22856;
+}
+
 .contest__title {
   color: #d22856;
   font-size: 14px;
@@ -250,6 +274,14 @@ textarea::placeholder {
   resize: none;
 }
 
+.contest__area:hover {
+  border-color: #283645;
+}
+
+.contest__area:focus {
+  border-color: #d22856;
+}
+
 .contest__button-wrapper {
   width: 280px;
   margin: 0 auto;
@@ -270,6 +302,18 @@ textarea::placeholder {
   border: 0;
   border-radius: 3px;
   margin-bottom: 35px;
+}
+
+.contest__button:hover {
+  background-color: #1c9b5e;
+}
+
+.contest__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contest__button:disabled {
+  background-color: #e5e5e5;
 }
 
 .contest__info {
