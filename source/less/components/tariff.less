@@ -1,10 +1,10 @@
 .tariff {
   background-image: url("../img/page-main/grey-background.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: -150px center;
   background-size: cover;
-  padding: 125px 0 49px;
-  margin-bottom: 47px;
+  padding: 138px 0 49px;
+  margin-bottom: 32px;
 }
 
 .tariff__wrapper {
@@ -29,7 +29,7 @@
 
 .tariff__table tr:not(:first-child) td {
   border: 2px solid #e5e5e5;
-  padding: 13px 122px 14px 21px;
+  padding: 13px 122px 16px 21px;
   background-color: #ffffff;
   font-weight: 400;
 }
@@ -44,7 +44,7 @@
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 18px 33px 15px;
+  padding: 13px 33px 24px;
   text-align: center;
 }
 
@@ -75,15 +75,15 @@
 .tariff__option-yes {
   background-image: url("../img/page-main/icon-yes-green.svg");
   background-repeat: no-repeat;
-  background-position-x: 225px;
-  background-position-y: 15px;
+  background-position-x: 230px;
+  background-position-y: 17px;
 }
 
 .tariff__option-no {
   background-image: url("../img/page-main/icon-no.svg");
   background-repeat: no-repeat;
-  background-position-x: 225px;
-  background-position-y: 15px;
+  background-position-x: 231px;
+  background-position-y: 16px;
 }
 
 .tariff__hit {
@@ -115,6 +115,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .tariff {
+    padding-top: 113px;
+    background-position: top center;
+    margin-bottom: 44px;
+  }
+
   .tariff__wrapper {
     width: auto;
     overflow: visible;
@@ -122,6 +128,7 @@
 
   .tariff__table {
     width: 620px;
+    margin-bottom: 21px;
   }
 
   .tariff__table tr {
@@ -129,7 +136,7 @@
   }
 
   .tariff__table tr:not(:first-child) td {
-    padding: 6px 19px 7px 18px;
+    padding: 7px 19px 7px 16px;
   }
 
   .tariff__table td {
@@ -142,7 +149,7 @@
   }
 
   .tariff__name {
-    padding: 13px 36px 5px;
+    padding: 13px 34px 5px;
   }
 
   .tariff__option-yes {
@@ -177,6 +184,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .tariff {
+    padding-bottom: 80px;
+    margin-bottom: 59px;
+  }
+
+  .tariff__wrapper {
+    padding-top: 43px;
+  }
+
   .tariff__table {
     width: 940px;
   }
@@ -194,7 +210,7 @@
   }
 
   .tariff__name {
-    padding: 16px 66px 17px;
+    padding: 19px 66px 17px;
   }
 
   .tariff__slider {
