@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+}
+
+.slider__controls button {
+  margin: 0 9px;
 }
 
 .slider__button--current {
@@ -12,15 +15,23 @@
   width: 12px;
   height: 12px;
   background-color: #ffffff;
-  margin-right: 10px;
+  cursor: pointer;
 }
 
 .slider__button {
   padding: 0;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border: none;
   background-color: rgba(40, 54, 69, 0.3);
-  margin-right: 10px;
+  cursor: pointer;
+}
+
+.slider__button:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__button:active {
+  background-color: rgba(40, 54, 69, 0.1);
 }

@@ -6,7 +6,7 @@
   margin: 0 auto;
   background-color: @base-bg-color;
   text-align: center;
-  padding-bottom: 52px;
+  padding-bottom: 43px;
 }
 
 .upload__title {
@@ -27,12 +27,12 @@
 
 .upload__wrapper {
   width: 280px;
-  padding: 20px 0 41px;
+  padding: 20px 0 43px;
   margin: 0 auto;
 }
 
 .upload__photo-container {
-  margin-bottom: 43px;
+  margin-bottom: 35px;
 }
 
 .upload__tools-list {
@@ -112,6 +112,10 @@
   background-color: #f2f2f2;
 }
 
+.upload__control-toggle:active {
+  background-color: #d22856;
+}
+
 .upload__control-toggle--crop {
   top: -6px;
   right: 35px;
@@ -151,6 +155,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .upload__title-wrapper {
+    padding-bottom: 70px;
+  }
+
   .upload__title {
     font-size: 18px;
   }
@@ -161,13 +169,14 @@
 
   .upload__wrapper {
     width: 620px;
-    padding: 57px 0 54px;
+    padding: 57px 0 48px;
   }
 
   .upload__tools-list {
     flex-direction: column;
     width: 289px;
     padding: 9px 0 0;
+    align-items: unset;
   }
 
   .upload__tools-list li {
@@ -214,11 +223,15 @@
     transform: translateX(-63%);
   }
 
+  .upload__control-toggle--crop {
+    right: 26px;
+  }
+
   .upload__crop-control::after {
     content: "";
     position: absolute;
-    top: 40px;
-    right: -15px;
+    top: 36px;
+    right: -19px;
     width: 275px;
     height: 1px;
     background-color: rgba(40, 54, 69, 0.1);
@@ -272,15 +285,15 @@
   .upload__fill-control::after {
     content: "";
     position: absolute;
-    top: 46px;
-    right: -15px;
+    top: 36px;
+    right: -19px;
     width: 275px;
     height: 1px;
     background-color: rgba(40, 54, 69, 0.1);
   }
 
   .upload__control-toggle--fill {
-    left: 20px;
+    left: 26px;
     top: -6px;
   }
 
@@ -294,7 +307,7 @@
 
   .upload__control-toogle--contrast {
     top: -6px;
-    right: 85px;
+    right: 89px;
   }
 
   .upload__button-container {
@@ -304,12 +317,11 @@
 
   .upload__button-post {
     width: 260px;
-    margin: 43px auto 24px;
+    margin: 44px 1px 24px;
   }
 
   .upload__button-cancel {
     width: 260px;
-    margin: 0 auto;
   }
 }
 
@@ -325,7 +337,11 @@
   }
 
   .upload__editor-photo {
-    padding: 57px 60px 57px 80px;
+    padding: 54px 60px 50px 80px;
+  }
+
+  .upload__photo-container {
+    margin-right: 89px;
   }
 
   .upload__tools-wrapper {
@@ -335,9 +351,9 @@
   }
 
   .upload__tools-list {
-    width: 382px;
+    width: 100%;
     padding: 0;
-    margin-bottom: 130px;
+    margin-bottom: 140px;
   }
 
   .upload__tools-list li {
@@ -353,21 +369,32 @@
   .upload__crop-control {
     width: 288px;
     transform: translateX(-66%);
+    top: -2px;
+  }
+
+  .upload__control-toggle--crop {
+    right: 41px;
   }
 
   .upload__crop-control::after {
     width: 410px;
     right: -28px;
-    top: 40px;
+    top: 36px;
   }
 
   .upload__fill-image {
     width: 48px;
     height: 43px;
+    margin-top: -8px;
   }
 
   .upload__fill-control {
     width: 288px;
+    top: -3px;
+  }
+
+  .upload__control-toggle--fill {
+    left: 34px;
   }
 
   .upload__fill-control::after {
@@ -383,6 +410,11 @@
 
   .upload__contrast-control {
     width: 288px;
+    top: 4px;
+  }
+
+  .upload__control-toogle--contrast {
+    right: 137px;
   }
 
   .upload__contrast::after {

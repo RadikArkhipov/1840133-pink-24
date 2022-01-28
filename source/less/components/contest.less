@@ -53,8 +53,8 @@ input::placeholder {
 
 .contest__travel-wrapper {
   background-color: @grey;
-  padding: 44px 0;
-  margin-bottom: 42px;
+  padding: 38px 0 48px;
+  margin-bottom: 32px;
 }
 
 .contest__travel-group {
@@ -69,7 +69,7 @@ input::placeholder {
   width: 220px;
   padding: 0;
   line-height: 18px;
-  margin-bottom: 43px;
+  margin-bottom: 41px;
 }
 
 .contest__checkbox {
@@ -82,7 +82,7 @@ input::placeholder {
   line-height: 30px;
   color: #283645;
   text-transform: none;
-  margin-left: 69px;
+  margin-left: 58px;
   margin-bottom: 52px;
   position: relative;
 }
@@ -95,7 +95,7 @@ input::placeholder {
   content: "";
   position: absolute;
   top: -3px;
-  left: -69px;
+  left: -58px;
   width: 34px;
   height: 34px;
   border: 2px solid #e5e5e5;
@@ -114,6 +114,10 @@ input::placeholder {
   background-image: url("../img/icon-yes-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.contest__checkbox-icon:focus + label::before {
+  border-color: #283645;
 }
 
 .contest__contacts {
@@ -145,7 +149,7 @@ input::placeholder {
 .contest__platform-wrapper {
   background-color: @grey;
   order: 1;
-  padding: 42px 0;
+  padding: 39px 0;
   margin-bottom: 38px;
 }
 
@@ -161,7 +165,7 @@ input::placeholder {
   padding: 0;
   text-align: center;
   line-height: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .contest__radio {
@@ -219,6 +223,10 @@ input::placeholder {
   border-color: #d22856;
 }
 
+.contest__radio-icon:focus + label::before {
+  border-color: #283645;
+}
+
 .contest__title {
   color: #d22856;
   font-size: 14px;
@@ -241,8 +249,7 @@ input::placeholder {
 
 .contest__textarea-wrapper {
   width: 280px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin: 0 auto 53px;
 }
 
 .contest__textarea-group {
@@ -252,7 +259,7 @@ input::placeholder {
 }
 
 .contest__textarea-title {
-  margin-bottom: 16px;
+  margin-bottom: 9px;
   text-align: center;
 }
 
@@ -269,7 +276,7 @@ textarea::placeholder {
   width: 100%;
   min-height: 200px;
   border: 2px solid #e5e5e5;
-  padding: 15px 19px;
+  padding: 15px 20px;
   vertical-align: top;
   resize: none;
 }
@@ -301,7 +308,7 @@ textarea::placeholder {
   text-transform: uppercase;
   border: 0;
   border-radius: 3px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .contest__button:hover {
@@ -334,7 +341,7 @@ textarea::placeholder {
   .contest__main-title {
     font-size: 18px;
     width: 490px;
-    margin-top: 92px;
+    margin-top: 91px;
     margin-bottom: 66px;
   }
 
@@ -349,11 +356,11 @@ textarea::placeholder {
 
   .contest__names-wrapper {
     width: 620px;
+    padding-bottom: 59px;
   }
 
   .contest__title {
     width: auto;
-    padding: 0 25px;
   }
 
   .contest__names-sign {
@@ -362,11 +369,12 @@ textarea::placeholder {
   }
 
   .contest__names-input {
-    width: 521px;
+    width: 525px;
+    flex-grow: 1;
   }
 
   .contest__names-title:not(:last-child) {
-    margin-bottom: 46px;
+    margin-bottom: 49px;
   }
 
   .contest__names-title {
@@ -378,12 +386,12 @@ textarea::placeholder {
     background-color: unset;
     order: 1;
     padding: 0;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   .contest__travel-group {
     width: 620px;
-    padding: 48px 0 53px;
+    padding: 40px 0 53px;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
   }
@@ -391,10 +399,11 @@ textarea::placeholder {
   .contest__travel-title {
     margin-bottom: 0;
     line-height: 30px;
+    padding: 0 25px;
   }
 
   .contest__checkbox label {
-    margin-left: 120px;
+    margin-left: 117px;
   }
 
   .contest__title--none {
@@ -403,21 +412,21 @@ textarea::placeholder {
 
   .contest__contacts {
     width: 620px;
-    margin: 0 auto;
     border: 2px solid #e5e5e5;
-    padding: 38px 0 26px;
-    margin-bottom: 57px;
+    padding: 30px 0 26px;
+    margin: 0 auto 54px;
   }
 
   .contest__contacts-title {
     text-align: center;
+    padding: 0 25px;
   }
 
   .contest__contacts-label {
     flex-direction: column;
     padding: 0;
     margin-bottom: 32px;
-    margin-left: 60px;
+    margin-left: 58px;
     position: relative;
   }
 
@@ -463,6 +472,7 @@ textarea::placeholder {
     background-color: unset;
     order: unset;
     padding: 0;
+    margin-bottom: 51px;
   }
 
   .contest__platform-group {
@@ -473,6 +483,7 @@ textarea::placeholder {
 
   .contest__platform-title {
     margin-bottom: 0;
+    padding: 0 25px;
   }
 
   .contest__radio label {
@@ -481,21 +492,22 @@ textarea::placeholder {
 
   .contest__textarea-wrapper {
     width: 620px;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 
   .contest__textarea-group {
     border: 2px solid #e5e5e5;
-    padding: 37px 0 50px;
+    padding: 29px 0 50px;
   }
 
   .contest__textarea-title {
     margin-bottom: 0;
+    padding: 0 25px;
   }
 
   .contest__area {
     min-height: 192px;
-    margin: 0 60px;
+    margin: 0 58px;
     width: 500px;
   }
 
@@ -507,7 +519,7 @@ textarea::placeholder {
   }
 
   .contest__button {
-    padding: 14px 57px;
+    padding: 16px 57px;
     margin-bottom: 0;
   }
 }
@@ -530,7 +542,7 @@ textarea::placeholder {
 
   .contest__names-wrapper {
     width: 433px;
-    margin: 4px 76px 60px 0;
+    margin: 9px 72px 52px 0;
     padding-bottom: 0;
   }
 
@@ -540,21 +552,22 @@ textarea::placeholder {
 
   .contest__platform-wrapper {
     width: 431px;
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   .contest__platform-group {
     width: 100%;
-    padding: 43px 0 54px;
+    padding: 48px 0 60px;
   }
 
   .contest__radio label {
-    margin-left: 140px;
+    margin-left: 133px;
   }
 
   .contest__contacts {
     width: 940px;
-    padding: 35px 0 14px;
+    padding: 30px 0 14px;
+    margin-bottom: 51px;
   }
 
   .contest__contacts-wrapper {
@@ -627,10 +640,11 @@ textarea::placeholder {
 
   .contest__textarea-wrapper {
     width: 940px;
+    margin-bottom: 63px;
   }
 
   .contest__textarea-group {
-    padding-top: 34px;
+    padding-top: 24px;
     padding-bottom: 45px;
     margin-bottom: 65px;
   }
