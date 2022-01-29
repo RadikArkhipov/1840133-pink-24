@@ -5,6 +5,16 @@
   background-size: auto, cover;
   position: relative;
   margin-bottom: 36px;
+  background-color: #283645;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #1d2631;
+    width: 100%;
+    height: 272px;
+    bottom: 4px;
+  }
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
@@ -16,15 +26,6 @@
 
 .intro__header {
   margin-bottom: 342px;
-}
-
-.intro::after {
-  content: "";
-  position: absolute;
-  background-color: #1d2631;
-  width: 100%;
-  height: 272px;
-  bottom: 4px;
 }
 
 .intro__wrapper {
@@ -61,16 +62,16 @@
   box-shadow: inset 0 0 0 3px #ffffff;
   border-radius: 30px;
   padding: 18px 38px;
-}
 
-.intro__download-button:hover {
-  background-color: #ffffff;
-  color: #d22856;
-}
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
 
-.intro__download-button:active {
-  background-color: #ffffff;
-  color: rgba(210, 40, 85, 0.3);
+  &:active {
+    background-color: #ffffff;
+    color: rgba(210, 40, 85, 0.3);
+  }
 }
 
 .intro__download-platform-list {
@@ -96,6 +97,10 @@
     background-position: center top;
     background-size: cover;
     margin-bottom: 47px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
@@ -126,10 +131,6 @@
     width: 247px;
     padding-left: 27px;
     margin-bottom: 29px;
-  }
-
-  .intro::after {
-    display: none;
   }
 
   .intro__slogan {

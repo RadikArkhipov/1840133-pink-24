@@ -14,34 +14,34 @@
   padding-top: 16px;
   padding-bottom: 15px;
   text-align: center;
-}
 
-.site-list__link:hover {
-  color: rgb(210, 40, 86);
-}
+  &:hover {
+    color: rgb(210, 40, 86);
+  }
 
-.site-list__link:active {
-  color: rgba(210, 40, 86, 0.3);
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__item {
     border-bottom: unset;
     border-top: unset;
-  }
 
-  .site-list__item--active {
-    position: relative;
-  }
+    &--active {
+      position: relative;
+    }
 
-  .site-list__item--active::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    left: 0;
-    right: 0;
-    background-color: @base-bg-color;
-    bottom: 30px;
+    &--active::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      background-color: @base-bg-color;
+      bottom: 30px;
+    }
   }
 
   .site-list__link {
