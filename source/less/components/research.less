@@ -20,20 +20,20 @@
     position: relative;
     margin-left: 20px;
     z-index: 1;
-  }
 
-  .research__image::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/page-main/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 238px;
-    height: 276px;
-    z-index: -1;
-    top: -54px;
-    left: -16px;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/page-main/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 238px;
+      height: 276px;
+      z-index: -1;
+      top: -54px;
+      left: -16px;
+    }
   }
 
   .research__pic {
@@ -97,13 +97,13 @@
     width: 298px;
     height: 345px;
     margin-right: 52px;
-  }
 
-  .research__image::after {
-    top: -68px;
-    left: -21px;
-    width: 298px;
-    height: 345px;
+    &::after {
+      top: -68px;
+      left: -21px;
+      width: 298px;
+      height: 345px;
+    }
   }
 
   .research__pic {

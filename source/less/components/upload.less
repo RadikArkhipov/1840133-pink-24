@@ -47,10 +47,10 @@
 
 .upload__crop-image {
   fill: #d22856;
-}
 
-.upload__crop-image:hover {
-  fill: rgba(40, 54, 69, 0.5);
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
 }
 
 .upload__crop-control {
@@ -66,10 +66,10 @@
 .upload__fill-image {
   fill: #283645;
   opacity: 0.3;
-}
 
-.upload__fill-image:hover {
-  opacity: 0.5;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .upload__fill-control {
@@ -78,25 +78,25 @@
 
 .upload__contrast {
   position: relative;
-}
 
-.upload__contrast::after {
-  content: "";
-  position: absolute;
-  top: 115px;
-  right: -60px;
-  width: 320px;
-  height: 1px;
-  background-color: rgba(40, 54, 69, 0.1);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 115px;
+    right: -60px;
+    width: 320px;
+    height: 1px;
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .upload__contrast-image {
   fill: #283645;
   opacity: 0.3;
-}
 
-.upload__contrast-image:hover {
-  opacity: 0.5;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .upload__contrast-control {
@@ -110,49 +110,48 @@
   border: 2px solid #d22856;
   border-radius: 50%;
   background-color: #f2f2f2;
-}
 
-.upload__control-toggle:active {
-  background-color: #d22856;
-}
+  &:active {
+    background-color: #d22856;
+  }
 
-.upload__control-toggle--crop {
-  top: -6px;
-  right: 35px;
+  &--crop {
+    top: -6px;
+    right: 35px;
+  }
 }
 
 .upload__button-post {
   box-shadow: inset 0 0 0 3px #d22856;
   color: #d22856;
   margin-bottom: 12px;
-}
 
-.upload__button-post:hover {
-  color: @base-bg-color;
-  background-color: #d22856;
-}
+  &:hover {
+    color: @base-bg-color;
+    background-color: #d22856;
+  }
 
-.upload__button-post:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #d22856;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d22856;
+  }
 }
 
 .upload__button-cancel {
   box-shadow: inset 0 0 0 3px rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
-}
 
-.upload__button-cancel:hover {
-  box-shadow: inset 0 0 0 3px rgba(40, 54, 69, 0.3);
-  color: rgba(40, 54, 69, 0.3);
-}
+  &:hover {
+    box-shadow: inset 0 0 0 3px rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
 
-.upload__button-cancel:active {
-  background-color: rgba(40, 54, 69, 0.3);
-  color: rgba(255, 255, 255, 0.3);
-  box-shadow: unset;
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: unset;
+  }
 }
-
 
 @media (min-width: @tablet-width) {
   .upload__title-wrapper {
@@ -258,12 +257,12 @@
     align-items: center;
     justify-content: space-between;
     width: 255px;
-  }
 
-  .upload__contrast::after {
-    top: 43px;
-    width: 275px;
-    right: -15px;
+    &::after {
+      top: 43px;
+      width: 275px;
+      right: -15px;
+    }
   }
 
   .upload__contrast-image {
@@ -280,16 +279,16 @@
     height: 2px;
     background-color: #283645;
     position: relative;
-  }
 
-  .upload__fill-control::after {
-    content: "";
-    position: absolute;
-    top: 36px;
-    right: -19px;
-    width: 275px;
-    height: 1px;
-    background-color: rgba(40, 54, 69, 0.1);
+    &::after {
+      content: "";
+      position: absolute;
+      top: 36px;
+      right: -19px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba(40, 54, 69, 0.1);
+    }
   }
 
   .upload__control-toggle--fill {
@@ -305,7 +304,7 @@
     position: relative;
   }
 
-  .upload__control-toogle--contrast {
+  .upload__control-toggle--contrast {
     top: -6px;
     right: 89px;
   }
@@ -370,16 +369,16 @@
     width: 288px;
     transform: translateX(-66%);
     top: -2px;
+
+    &::after {
+      width: 410px;
+      right: -28px;
+      top: 36px;
+    }
   }
 
   .upload__control-toggle--crop {
     right: 41px;
-  }
-
-  .upload__crop-control::after {
-    width: 410px;
-    right: -28px;
-    top: 36px;
   }
 
   .upload__fill-image {
@@ -391,16 +390,16 @@
   .upload__fill-control {
     width: 288px;
     top: -3px;
+
+    &::after {
+      width: 410px;
+      right: -28px;
+      top: 40px;
+    }
   }
 
   .upload__control-toggle--fill {
     left: 34px;
-  }
-
-  .upload__fill-control::after {
-    width: 410px;
-    right: -28px;
-    top: 40px;
   }
 
   .upload__contrast-image {
@@ -413,7 +412,7 @@
     top: 4px;
   }
 
-  .upload__control-toogle--contrast {
+  .upload__control-toggle--contrast {
     right: 137px;
   }
 

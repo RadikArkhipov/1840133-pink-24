@@ -34,10 +34,6 @@
   font-weight: 400;
 }
 
-.tariff__name--empty {
-  display: none;
-}
-
 .tariff__name {
   background-color: #283645;
   color: #ffffff;
@@ -46,6 +42,10 @@
   text-transform: uppercase;
   padding: 13px 33px 24px;
   text-align: center;
+
+  &--empty {
+    display: none;
+  }
 }
 
 .tariff__name:nth-child(2) {
@@ -88,30 +88,30 @@
 
 .tariff__hit {
   position: relative;
-}
 
-.tariff__hit::before {
-  content: "ХИТ";
-  position: absolute;
-  font-size: 14px;
-  font-weight: 400;
-  width: 27px;
-  height: 10px;
-  z-index: 1;
-  transform: rotate(-45deg);
-  top: 17px;
-  left: 6px;
-}
+  &::before {
+    content: "ХИТ";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    width: 27px;
+    height: 10px;
+    z-index: 1;
+    transform: rotate(-45deg);
+    top: 17px;
+    left: 6px;
+  }
 
-.tariff__hit::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/page-main/hit-mobile.svg");
-  background-repeat: no-repeat;
-  width: 74px;
-  height: 74px;
-  top: 0;
-  left: -2px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/page-main/hit-mobile.svg");
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    left: -2px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -143,13 +143,13 @@
     width: 25%;
   }
 
-  .tariff__name--empty {
-    display: table-cell;
-    background-color: #f2f2f2;
-  }
-
   .tariff__name {
     padding: 13px 34px 5px;
+
+    &--empty {
+      display: table-cell;
+      background-color: #f2f2f2;
+    }
   }
 
   .tariff__option-yes {

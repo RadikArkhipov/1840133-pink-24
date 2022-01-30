@@ -8,10 +8,10 @@
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-}
 
-.contest__main-title--add {
-  display: none;
+  &--add {
+    display: none;
+  }
 }
 
 .contest__form-wrapper {
@@ -37,17 +37,17 @@
   border: 2px solid #e5e5e5;
   outline: 0;
   min-height: 61px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
-.contest__text:hover {
-  border-color: #283645;
-}
-
-.contest__text:focus {
-  border-color: #d22856;
-}
-
-input::placeholder {
+.contest__title input::placeholder {
   color: #283645;
 }
 
@@ -142,10 +142,6 @@ input::placeholder {
   margin-left: 22px;
 }
 
-.contest__title--none {
-  display: none;
-}
-
 .contest__platform-wrapper {
   background-color: @grey;
   order: 1;
@@ -231,6 +227,10 @@ input::placeholder {
   color: #d22856;
   font-size: 14px;
   text-transform: uppercase;
+
+  &--none {
+    display: none;
+  }
 }
 
 .contest__names-title:not(:last-child) {
@@ -263,7 +263,7 @@ input::placeholder {
   text-align: center;
 }
 
-textarea::placeholder {
+.contest textarea::placeholder {
   color: #283645;
 }
 
@@ -279,14 +279,14 @@ textarea::placeholder {
   padding: 15px 20px;
   vertical-align: top;
   resize: none;
-}
 
-.contest__area:hover {
-  border-color: #283645;
-}
+  &:hover {
+    border-color: #283645;
+  }
 
-.contest__area:focus {
-  border-color: #d22856;
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .contest__button-wrapper {
@@ -309,18 +309,19 @@ textarea::placeholder {
   border: 0;
   border-radius: 3px;
   margin-bottom: 30px;
-}
+  cursor: pointer;
 
-.contest__button:hover {
-  background-color: #1c9b5e;
-}
+  &:hover {
+    background-color: #1c9b5e;
+  }
 
-.contest__button:active {
-  color: rgba(255, 255, 255, 0.3);
-}
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-.contest__button:disabled {
-  background-color: #e5e5e5;
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .contest__info {
@@ -328,13 +329,13 @@ textarea::placeholder {
   font-size: 14px;
 }
 
+.contest__info-desktop-add {
+  display: none;
+}
+
 .contest__info sup {
   color: #d22856;
   top: -0.25em;
-}
-
-.contest__info--desctop-add {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -343,10 +344,10 @@ textarea::placeholder {
     width: 490px;
     margin-top: 91px;
     margin-bottom: 66px;
-  }
 
-  .contest__main-title--add {
-    display: block;
+    &--add {
+      display: block;
+    }
   }
 
   .contest__form-wrapper {
@@ -361,6 +362,10 @@ textarea::placeholder {
 
   .contest__title {
     width: auto;
+
+    &--none {
+      display: block;
+    }
   }
 
   .contest__names-sign {
@@ -406,10 +411,6 @@ textarea::placeholder {
     margin-left: 117px;
   }
 
-  .contest__title--none {
-    display: block;
-  }
-
   .contest__contacts {
     width: 620px;
     border: 2px solid #e5e5e5;
@@ -447,7 +448,7 @@ textarea::placeholder {
   .contest__phone-icon {
     position: absolute;
     top: 2px;
-    right: 66px;
+    right: 68px;
     width: 58px;
     height: 57px;
     background-color: #e5e5e5;
@@ -459,7 +460,7 @@ textarea::placeholder {
   .contest__mail-icon {
     position: absolute;
     top: 2px;
-    right: 66px;
+    right: 68px;
     width: 58px;
     height: 57px;
     background-color: #e5e5e5;
@@ -528,10 +529,10 @@ textarea::placeholder {
   .contest__main-title {
     width: 757px;
     margin-bottom: 70px;
-  }
 
-  .contest__main-title--add {
-    display: inline;
+    &--add {
+      display: inline;
+    }
   }
 
   .contest__form-wrapper {
@@ -658,7 +659,7 @@ textarea::placeholder {
     width: 940px;
   }
 
-  .contest__info--desctop-add {
+  .contest__info-desktop-add {
     display: inline;
   }
 }
